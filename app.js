@@ -6,7 +6,11 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
+app.set('view engine', 'ejs');
+
 app.get("/", function (req, res) {
+
+    res.render('index', )
     var today = new Date();
 
   if (today.getDay() == 6 || today.getDay() == 0) {
